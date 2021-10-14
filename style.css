@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI Light';
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.navbar {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  border-color: transparent;
+  margin: 0;
+}
+
+.navbar-inverse {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: rgb(0, 0, 0);
+}
+
+.navbar-inverse .navbar-toggle:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar-inverse {
+  font-weight: bold;
+}
+
+.navbar li:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.FB-logo-wrapper {
+  display: flex;
+  padding: 0.8rem 0;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.6px;
+}
+
+.FB-logo-wrapper .FB-logo {
+  margin-right: -15px;
+  padding-bottom: 3px;
+  padding-right: 0.6rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.dropdown:hover .fadeIn {
+  display: block;
+}
+
+.bio-text {
+  max-width: 50em;
+  margin: 20px auto;
+  font: 1.8rem 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.5px;
+  line-height: 33px;
+  text-align: justify;
+  background-color: #fff;
+  padding: 30px 70px;
+  border-radius: 5px;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font: 300 35px 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+#mask {
+  position: relative;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul.dropdown-menu {
+  position: absolute;
+  background-color: #000000;
+  border: 1px solid;
+  text-align: center;
+}
+
+ul.dropdown-menu > li > a {
+  display: block;
+  padding: 1px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul.navbar > li:hover > ul {
+  display: block;
+}
+
+.header {
+  margin-bottom: 4%;
+}
+
+footer.footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #9da1a6;
+  background-color: #141414;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+footer.footer .row {
+  padding-bottom: 17px;
+  padding-top: 17px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+footer.footer .copyright {
+  color: #ffffff;
+}
+
+.author {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.date {
+  font-style: italic;
+  font-size: small;
+  color: #9da1a6;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+#mask::after {
+  background: transparent;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 60%
+  );
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.slideRight {
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-150%);
+  }
+
+  50% {
+    transform: translateX(8%);
+  }
+
+  65% {
+    transform: translateX(-4%);
+  }
+
+  80% {
+    transform: translateX(4%);
+  }
+
+  95% {
+    transform: translateX(-2%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+
+  50% {
+    -webkit-transform: translateX(8%);
+  }
+
+  65% {
+    -webkit-transform: translateX(-4%);
+  }
+
+  80% {
+    -webkit-transform: translateX(4%);
+  }
+
+  95% {
+    -webkit-transform: translateX(-2%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+nav li a:hover,
+.rotate {
+  animation: animrotate 1s;
+  background: transparent;
+}
+
+@keyframes animrotate {
+  100% {
+    background: transparent;
+    -webkit-transform: perspective(200px) rotateY(360deg);
+  }
+}
