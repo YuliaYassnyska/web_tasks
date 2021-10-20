@@ -82,20 +82,22 @@
         <hr  size="5"/>
     </div>
 </div>
+<div id="feedback">
+</div>
 <div class="container">
     <div class="row-flex">
     <div class="container">
-        <div class="main-text">
+        <div class="main-text myForm" id="myForm">
             <div class="col-md-8">
                 <br>
                 <div class="form-group">
-                    <textarea class="form-control vresize" rows="13" placeholder="Написати звернення..." style="outline: 0 !important; height: 20rem; position: relative;"></textarea>
+                    <textarea class="form-control vresize" id="myId" rows="13" placeholder="Написати звернення..." style="outline: 0 !important; height: 20rem; position: relative;"></textarea>
                 </div>
             </div>
             <div class="col-md-4">
                 <br>
                 <div class="form-group row" style="text-align: center; padding: 15.7rem 0 0 0;">
-                    <button type="submit" class="btn btn-default" style="font-weight: bold; padding: 1rem 6rem;">Send</button>
+                    <button type="submit" class="btn btn-default" style="font-weight: bold; padding: 1rem 6rem;" onclick="checkInfo()">Send</button>
                 </div>
             </div>
         </div>
@@ -105,6 +107,7 @@
 </div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='domTask.js'></script>
 <footer class="footer">
     <div class="container">
         <div class="row">
