@@ -19,6 +19,6 @@ function checkInfo() {
             "<div class='col-md-4'><span class='author'>" + 'FootballFan2000' + "</span></div>" +
             "</p><br></div><div class='col-md-12'><hr size ='5'/></div></div>";
         parentElem.appendChild(out);
-        document.getElementById('myForm').reset();
+        document.getElementById('myId').value = ''
     }
 }
